@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    transition: background-color 0.4s; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
