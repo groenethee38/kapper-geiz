@@ -43,16 +43,19 @@
     </div>
 </section>
 
-<section class="py-32 bg-primary text-primary-content ">
+<section class="py-32 bg-primary">
     <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-0 space-y-12 lg:space-y-22 lg:space-x-16">
         <div class="flex-1 lg:text-right text-center">
             <h1 class="text-5xl font-bold mb-6">Jaren ervaring</h1>
-            <p class="text-lg mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint <a href="#contact" class="link link-secondary">Openingstijden</a> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                
+            <p class="mb-8">
+                Hoewel Geiz pas in 2023 is opgericht, brengen onze kappers waardevolle ervaring met zich mee die ze sinds 2017 hebben opgedaan in het vak. 
+                Sinds de start van hun carrière hebben zij hun vaardigheden verfijnd en zich continu bijgeschoold in de nieuwste technieken en trends in haarverzorging. 
+                Bij Geiz combineren we deze ervaring met de nieuwste trends om een uitstekende service te bieden. 
+                <br>
+                <br>
+                Bij Geiz staat kwaliteit voorop. Onze ervaren kappers gebruiken uitsluitend hoogwaardige producten en technieken 
+                om ervoor te zorgen dat je met een tevreden gevoel de deur uitgaat. 
+                Wij hebben een passie voor zowel klassieke als moderne kapsels en zorgen ervoor dat elk kapsel met precisie en vakmanschap wordt uitgevoerd.
             </p>
         </div>
         <div class="flex-1">
@@ -63,14 +66,17 @@
     <div class="max-w-6xl mx-auto mt-24 flex flex-col lg:flex-row-reverse items-center justify-between px-4 lg:px-0 space-y-12 lg:space-y-22 lg:space-x-16">
         <div class="flex-1 lg:text-left text-center">
             <h1 class="text-5xl font-bold mb-6">Ervaring die telt</h1>
-            <p class="text-lg mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                
+            <p class="mb-8">
+                Onze kappers hebben sinds 2017 hun expertise opgebouwd in het creëren van diverse kapsels en stijlen. 
+                Sinds de oprichting van Geiz in 2023 hebben wij deze ervaring verder ingezet om een hoog niveau van service te bieden. 
+                Of je nu een klassieke snit of een trendy look zoekt, wij hebben de ervaring en kennis om aan jouw wensen te voldoen.
+                <br>
+                <br>
+                Bij Geiz hechten wij veel waarde aan een persoonlijke benadering. Wij nemen de tijd om jouw wensen en 
+                behoeften te begrijpen en bieden professioneel advies om het beste resultaat te bereiken. 
+                Onze focus ligt op klanttevredenheid, en wij streven ernaar om jou een comfortabele en op maat gemaakte ervaring te 
             </p>
-            <a href="#contact" class="btn btn-outline btn-primary">Afspraak maken</a>
+            <a href="#contact" class="btn btn-outline btn-primary border-2">Afspraak maken</a>
         </div>
         <div class="flex-1">
             <img src="barbershop2.jpg" class="w-full lg:w-5/6 h-auto rounded-lg" alt="Barbershop interior">
@@ -79,31 +85,36 @@
 </section>
 
 
-<section id="about" class="py-32 bg-secondary text-primary-content">
+<section id="about" class="py-32 bg-secundary ">
     <div class="max-w-6xl mx-auto flex flex-col px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
         <h1 class=" text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
         <div class="flex flex-col lg:flex-row space-y-6">
-            <div class="flex-1 text-primary-content text-left pr-20">
+            <div class="flex-1 text-left pr-20">
                 <p>    
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Hoewel Geiz pas in 2023 officieel werd opgericht, brengen wij bij Geiz jarenlange ervaring en vakmanschap met ons mee. 
+                    Sinds 2016 zijn we actief als kapper en hebben we onze vaardigheden voortdurend verfijnd en uitgebreid. 
+                    Deze jarenlange ervaring in de branche stelt ons in staat om een uitzonderlijke kwaliteit van haarverzorging te bieden.
+                    <br>
+                    <br>
+                    Met de oprichting van Geiz in 2023 hebben wij onze passie en expertise in een eigen barbershop gebundeld. 
+                    Ondanks dat we een relatief nieuwe speler zijn op de markt, zetten wij onze uitgebreide ervaring en kennis in om uitstekende service te leveren. 
+                    Onze klantenkring groeit snel en we zijn trots op de positieve feedback die we tot nu toe hebben ontvangen. 
+                    Bij Geiz combineren we jarenlange ervaring met een frisse benadering om jouw kapsel precies goed te krijgen.
                 </p>
             </div>    
-            <ul class="timeline timeline-vertical text-primary-content flex-1">
+            <ul class="timeline timeline-vertical flex-1">
                 <li>
-                <div class="timeline-start timeline-box">2016: Begonnen met knippen als hobby</div>
+                <div class="timeline-start timeline-box"><span class="font-bold">2016:</span> Begonnen met knippen als hobby</div>
                 <hr />
                 </li>
                 <li>
                 <hr />
-                <div class="timeline-end timeline-box">2017: Eerste baan als kapper</div>
+                <div class="timeline-end timeline-box"><span class="font-bold">2017:</span>  Eerste baan als kapper</div>
                 <hr />
                 </li>
                 <li>
                 <hr />
-                <div class="timeline-start timeline-box">2023: Barbershop Geiz geopend</div>
+                <div class="timeline-start timeline-box"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
                 </li>
             </ul>
         </div>
@@ -147,10 +158,7 @@
                 </tr>
                 
                 <p class="py-10">
-                    Station Arnhem Centraal<br>
-                    Stationsplein 166, 6811 KJ Arnhem<br>
-                    06 31834933<br>
-                    info@geiz.nl
+                    Station Arnhem Centraal<br> Stationsplein 166, 6811 KJ Arnhem<br> 06 31834933<br> info@geiz.nl
                 </p>
             </div>
         </div>
@@ -158,8 +166,7 @@
 
 <section id="" class="py-32 bg-accent text-accent-content">
     <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle space-y-12 lg:space-y-24 lg:space-x-16">
-        <h1 class="text-5xl font-bold">Onze tevreden klanten</h1>
-
+        <h1 class="text-5xl font-bold ">Onze tevreden klanten</h1>
         <div class="flex flex-col lg:flex-row lg:space-x-12 indicator space-y-6 lg:space-y-0">
             <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
                 <span class="indicator-item badge badge-accent">high fade</span>
@@ -176,7 +183,7 @@
     </div>
 </section>
 
-<section id="contact" class="py-32 text-primary-content bg-primary">
+<section id="contact" class="py-32 bg-primary">
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-12 lg:space-y-24 lg:space-x-16">
         <div class="w-full">
             <h1 class="text-5xl font-bold">Maak een afspraak</h1>
@@ -185,15 +192,15 @@
         <div class="flex flex-col lg:flex-row mx-auto items-center lg:items-start">
             <div class="w-72 px-4 lg:px-0 flex flex-col items-start space-y-4">
                 <label class="input input-bordered flex items-center gap-2 w-full">
-                    Naam:
+                    <span class="text-secondary-content">Naam:</span>
                     <input type="text" class="grow" placeholder="" />
                 </label>
                 <label class="input input-bordered flex items-center gap-2 w-full">
-                    Tel:
+                    <span class="text-secondary-content">Tel:</span>
                     <input type="text" class="grow" placeholder="" />
                 </label>
                 <label class="input  input-bordered flex items-center gap-2 w-full">
-                    Email:
+                    <span class="text-secondary-content">Email:</span>
                     <input type="email" class="grow" placeholder="" />
                 </label>
                 <label class="input input-bordered flex items-center gap-2 w-full">
@@ -223,10 +230,10 @@
     </div>
 </section>
 
-<footer class="py-20 text-gray-content bg-secondary text-secondary-content">
-    <div class="max-w-6xl flex mx-auto">
+<footer class="py-10 lg:py-16 text-gray-content bg-footer text-secondary-content">
+    <div class="max-w-6xl flex flex-col lg:flex-row mx-auto px-2">
         <h2 class="">GEIZ<br>© 2024 Geiz. All Rights Reserved.</h2>
-        <div class="ml-auto flex flex-col">
+        <div class="lg:ml-auto flex flex-col">
             <h3 class="">Socials</h3>
         </div>
     </div>

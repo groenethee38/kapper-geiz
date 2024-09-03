@@ -10,8 +10,9 @@ export default {
     extend: {
       colors: {
         primary: '#F5F5F5',
-        secondary: '#D1D1D1',
-        accent: '#21160f',
+        secondary: '#e3e1e1',
+        accent: '#2e221b',
+        footer: '#303030',
         'primary-content': '#000',
         'secondary-content': '#555555',
         'accent-content': '#FFFFFF',
