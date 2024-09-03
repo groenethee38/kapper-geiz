@@ -133,36 +133,54 @@
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-12 lg:space-y-24 lg:space-x-16">
         <div class="w-full">
             <h1 class="text-white text-5xl font-bold">Maak een afspraak</h1>
+            <h2 class="text-white text-l py-4">Vul een datum in en bekijk de beschikbare tijden.</h2>
         </div>
-        <div class="w-full flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row mx-auto">
             <div class="w-72 px-4 lg:px-0 flex flex-col items-start space-y-4">
-                <label class="input input-primary input-bordered flex items-center gap-2 w-full">
-                    Naam
+                <label class="input input-bordered flex items-center gap-2 w-full">
+                    Naam:
                     <input type="text" class="grow" placeholder="" />
                 </label>
-                <label class="input input-primary input-bordered flex items-center gap-2 w-full">
-                    Tel
+                <label class="input input-bordered flex items-center gap-2 w-full">
+                    Tel:
                     <input type="text" class="grow" placeholder="" />
                 </label>
-                <label class="input input-primary input-bordered flex items-center gap-2 w-full">
-                    Email
+                <label class="input  input-bordered flex items-center gap-2 w-full">
+                    Email:
                     <input type="email" class="grow" placeholder="" />
                 </label>
-                <label class="input input-primary input-bordered flex items-center gap-2 w-full">
+                <label class="input input-bordered flex items-center gap-2 w-full">
                     <input type="date" class="grow" placeholder="Datum" />
-                </label>    
+                </label>
+                <button class="btn btn-primary">Maak afspraak</button>
             </div>
-            <div class="">
-
+            <div class="grid grid-cols-4 p-10 pt-0 space-x-2">
+                <input type="radio" name="time-buttons" class="btn join-item ml-2" aria-label="10:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="10:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="11:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="11:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="12:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="12:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="13:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="13:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="14:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="14:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="15:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="15:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="16:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="16:30"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="17:00"  />
+                <input type="radio" name="time-buttons" class="btn join-item" aria-label="17:30"  />
             </div>
         </div>
     </div>
 </section>
 
-<footer class="py-20 footer bg-gray-900 text-neutral-content">
-    <div class="max-w-6xl flex flex-row justify-start px-4">
-        <div>
-            <h2 class="text-gray-400">Kapper Geiz</h2>
+<footer class="py-20 bg-gray-900 text-neutral-content">
+    <div class="max-w-6xl flex mx-auto">
+        <h2 class="text-gray-400">Kapper Geiz</h2>
+        <div class="ml-auto flex flex-col">
+            <h3 class="">Socials</h3>
         </div>
     </div>
 </footer>
