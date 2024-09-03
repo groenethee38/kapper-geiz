@@ -43,7 +43,7 @@
     </div>
 </section>
 
-<section class="py-32  bg-neutral-900">
+<section class="py-32">
     <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-0 space-y-12 lg:space-y-22 lg:space-x-16">
         <div class="flex-1 lg:text-right text-center">
             <h1 class="text-5xl font-bold mb-6 text-white">Jaren ervaring</h1>
@@ -79,9 +79,9 @@
 </section>
 
 
-<section id="about" class="py-32 bg-neutral-800">
-    <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
-        <h1 class="text-white text-5xl font-bold">Sinds 2016</h1>
+<section id="about" class="py-32">
+    <div class="max-w-6xl mx-auto flex flex-col px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
+        <h1 class="text-white text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
         <div class="flex flex-col lg:flex-row space-y-6">
             <div class="flex-1 text-white text-left pr-20">
                 <p>    
@@ -107,9 +107,56 @@
                 </li>
             </ul>
         </div>
-</section>
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row justify-start lg:space-x-4">
+            <div class="flex pt-6 lg:pt-0">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5569.762524335026!2d5.899942782876557!3d51.983616522609175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a5b9ff24740b%3A0xd755c8f57a1f7188!2sStation%20Arnhem%20Centraal!5e0!3m2!1snl!2snl!4v1725381631850!5m2!1snl!2snl"
+                    width="550" 
+                    height="450" 
+                    class="rounded-lg w-full lg:w-[550px]" 
+                    loading="lazy" 
+                    title="map">
+                </iframe>
+            </div>
+            <div class="text-white my-auto px-6 pt-6 lg:pt-0">
+                <h3 class="text-2xl tracking-wider uppercase py-4 text-left font-bold">Openingstijden</h3>
+                <tr>
+                    <th class="text-left py-2 font-normal">Dinsdag</th>
+                    <th class="pr-4">10:00</th>
+                    <th>18:00</th>
+                </tr>
+                <tr>
+                    <th class="text-left py-2 font-normal">Woensdag</th>
+                    <th class="pr-4">10:00</th>
+                    <th>18:00</th>
+                </tr>
+                <tr>
+                    <th class="text-left py-2 pr-6 font-normal">Donderdag</th>
+                    <th class="pr-4">10:00</th>
+                    <th>18:00</th>
+                </tr>
+                <tr>
+                    <th class="text-left py-2 font-normal">Vrijdag</th>
+                    <th class="pr-4">10:00</th>
+                    <th>20:00</th>
+                </tr>
+                <tr>
+                    <th class="text-left py-2 font-normal">Zaterdag</th>
+                    <th class="pr-4">10:00</th>
+                    <th>18:00</th>
+                </tr>
+                
+                <p class="py-10">
+                    Station Arnhem Centraal<br>
+                    Stationsplein 166, 6811 KJ Arnhem<br>
+                    06 31834933<br>
+                    info@geiz.nl
+                </p>
+            </div>
+        </div>
+ </section>
 
-<section id="" class="py-32 bg-neutral-700">
+<section id="" class="py-32">
     <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle space-y-12 lg:space-y-24 lg:space-x-16">
         <h1 class="text-white text-5xl font-bold">Onze tevreden klanten</h1>
 
@@ -129,13 +176,13 @@
     </div>
 </section>
 
-<section id="contact" class="py-32 bg-neutral-800">
+<section id="contact" class="py-32">
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-12 lg:space-y-24 lg:space-x-16">
         <div class="w-full">
             <h1 class="text-white text-5xl font-bold">Maak een afspraak</h1>
             <h2 class="text-white text-l py-4">Vul een datum in en bekijk de beschikbare tijden.</h2>
         </div>
-        <div class="flex flex-col lg:flex-row mx-auto">
+        <div class="flex flex-col lg:flex-row mx-auto items-center lg:items-start">
             <div class="w-72 px-4 lg:px-0 flex flex-col items-start space-y-4">
                 <label class="input input-bordered flex items-center gap-2 w-full">
                     Naam:
@@ -154,8 +201,8 @@
                 </label>
                 <button class="btn btn-primary">Maak afspraak</button>
             </div>
-            <div class="grid grid-cols-4 p-10 pt-0 space-x-2">
-                <input type="radio" name="time-buttons" class="btn join-item ml-2" aria-label="10:00"  />
+            <div class="grid grid-cols-4 p-10 lg:pt-0 space-y-2 space-x-2">
+                <input type="radio" name="time-buttons" class="btn join-item ml-2 mt-2" aria-label="10:00"  />
                 <input type="radio" name="time-buttons" class="btn join-item" aria-label="10:30"  />
                 <input type="radio" name="time-buttons" class="btn join-item" aria-label="11:00"  />
                 <input type="radio" name="time-buttons" class="btn join-item" aria-label="11:30"  />
@@ -176,7 +223,7 @@
     </div>
 </section>
 
-<footer class="py-20 bg-gray-900 text-neutral-content">
+<footer class="py-20 text-neutral-content">
     <div class="max-w-6xl flex mx-auto">
         <h2 class="text-gray-400">Kapper Geiz</h2>
         <div class="ml-auto flex flex-col">
