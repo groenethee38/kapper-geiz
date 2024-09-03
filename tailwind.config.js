@@ -1,13 +1,39 @@
-module.exports = {
+// tailwind.config.js
+import { join } from 'path';
+
+export default {
   content: [
-    './index.html',
-    './src/**/*.{svelte,js,ts}'
+    './src/**/*.{html,js,svelte,ts}',
+    join(__dirname, 'node_modules', 'daisyui', '**', '*.{js,ts,jsx,tsx}')
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#F5F5F5',
+        secondary: '#D1D1D1',
+        accent: '#21160f',
+        'primary-content': '#000',
+        'secondary-content': '#555555',
+        'accent-content': '#FFFFFF',
+      },
+    },
   },
-  plugins: [
-    require('daisyui'),
-  ],
-}
-
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: '#008080',
+          secondary: '#FF6F61',
+          accent: '#FFA07A',
+          neutral: '#333333',
+          'base-100': '#fff',
+          info: '#3ABFF8',
+          success: '#36D399',
+          warning: '#FBBD23',
+          error: '#F87272',
+        },
+      },
+    ],
+  },
+};

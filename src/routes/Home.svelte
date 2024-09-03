@@ -26,7 +26,7 @@
 </script>
 
 
-<header bind:this={header} class="bg bg-black bg-opacity-0 rgba flex justify-between items-center py-4 px-10 fixed w-full top-0 left-z z-10">
+<header bind:this={header} class="bg-black bg-opacity-0 rgba flex justify-between items-center py-4 px-10 fixed w-full top-0 left-z z-10">
     <h1 class="font-bold uppercase text-white text-3xl">Geiz</h1>
     <nav bind:this={nav} class="flex space-x-2 text-white">
         <a href="#home" class="btn btn-ghost">Home</a>
@@ -43,11 +43,11 @@
     </div>
 </section>
 
-<section class="py-32">
+<section class="py-32 bg-primary text-primary-content ">
     <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-0 space-y-12 lg:space-y-22 lg:space-x-16">
         <div class="flex-1 lg:text-right text-center">
-            <h1 class="text-5xl font-bold mb-6 text-white">Jaren ervaring</h1>
-            <p class="text-lg text-gray-300 mb-8">
+            <h1 class="text-5xl font-bold mb-6">Jaren ervaring</h1>
+            <p class="text-lg mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -62,8 +62,8 @@
 
     <div class="max-w-6xl mx-auto mt-24 flex flex-col lg:flex-row-reverse items-center justify-between px-4 lg:px-0 space-y-12 lg:space-y-22 lg:space-x-16">
         <div class="flex-1 lg:text-left text-center">
-            <h1 class="text-5xl font-bold mb-6 text-white">Ervaring die telt</h1>
-            <p class="text-lg text-gray-300 mb-8">
+            <h1 class="text-5xl font-bold mb-6">Ervaring die telt</h1>
+            <p class="text-lg mb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -79,11 +79,11 @@
 </section>
 
 
-<section id="about" class="py-32">
+<section id="about" class="py-32 bg-secondary text-primary-content">
     <div class="max-w-6xl mx-auto flex flex-col px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
-        <h1 class="text-white text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
+        <h1 class=" text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
         <div class="flex flex-col lg:flex-row space-y-6">
-            <div class="flex-1 text-white text-left pr-20">
+            <div class="flex-1 text-primary-content text-left pr-20">
                 <p>    
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -91,7 +91,7 @@
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>    
-            <ul class="timeline timeline-vertical text-white flex-1">
+            <ul class="timeline timeline-vertical text-primary-content flex-1">
                 <li>
                 <div class="timeline-start timeline-box">2016: Begonnen met knippen als hobby</div>
                 <hr />
@@ -118,8 +118,8 @@
                     title="map">
                 </iframe>
             </div>
-            <div class="text-white my-auto px-6 pt-6 lg:pt-0">
-                <h3 class="text-2xl tracking-wider uppercase py-4 text-left font-bold">Openingstijden</h3>
+            <div class="my-auto px-6 pt-6 lg:pt-0">
+                <h3 class="text-2xl tracking-wider uppercase py-4 text-left font-semibold">Openingstijden</h3>
                 <tr>
                     <th class="text-left py-2 font-normal">Dinsdag</th>
                     <th class="pr-4">10:00</th>
@@ -156,9 +156,9 @@
         </div>
  </section>
 
-<section id="" class="py-32">
+<section id="" class="py-32 bg-accent text-accent-content">
     <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle space-y-12 lg:space-y-24 lg:space-x-16">
-        <h1 class="text-white text-5xl font-bold">Onze tevreden klanten</h1>
+        <h1 class="text-5xl font-bold">Onze tevreden klanten</h1>
 
         <div class="flex flex-col lg:flex-row lg:space-x-12 indicator space-y-6 lg:space-y-0">
             <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
@@ -176,11 +176,11 @@
     </div>
 </section>
 
-<section id="contact" class="py-32">
+<section id="contact" class="py-32 text-primary-content bg-primary">
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-12 lg:space-y-24 lg:space-x-16">
         <div class="w-full">
-            <h1 class="text-white text-5xl font-bold">Maak een afspraak</h1>
-            <h2 class="text-white text-l py-4">Vul een datum in en bekijk de beschikbare tijden.</h2>
+            <h1 class="text-5xl font-bold">Maak een afspraak</h1>
+            <h2 class="text-l py-4">Vul een datum in en bekijk de beschikbare tijden.</h2>
         </div>
         <div class="flex flex-col lg:flex-row mx-auto items-center lg:items-start">
             <div class="w-72 px-4 lg:px-0 flex flex-col items-start space-y-4">
@@ -201,7 +201,7 @@
                 </label>
                 <button class="btn btn-primary">Maak afspraak</button>
             </div>
-            <div class="grid grid-cols-4 p-10 lg:pt-0 space-y-2 space-x-2">
+            <div class="grid grid-cols-4 p-10 lg:pt-0 space-y-2 space-x-2 ">
                 <input type="radio" name="time-buttons" class="btn join-item ml-2 mt-2" aria-label="10:00"  />
                 <input type="radio" name="time-buttons" class="btn join-item" aria-label="10:30"  />
                 <input type="radio" name="time-buttons" class="btn join-item" aria-label="11:00"  />
@@ -223,9 +223,9 @@
     </div>
 </section>
 
-<footer class="py-20 text-neutral-content">
+<footer class="py-20 text-gray-content bg-secondary text-secondary-content">
     <div class="max-w-6xl flex mx-auto">
-        <h2 class="text-gray-400">Kapper Geiz</h2>
+        <h2 class="">GEIZ<br>© 2024 Geiz. All Rights Reserved.</h2>
         <div class="ml-auto flex flex-col">
             <h3 class="">Socials</h3>
         </div>
