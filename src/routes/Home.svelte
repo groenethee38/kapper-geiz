@@ -3,6 +3,7 @@
     
     let header;
     let nav;
+    let phoneNav = document.getElementById('phone-nav');
 
     onMount(() => {
         if (window.innerWidth <= 400) {
@@ -26,12 +27,27 @@
 </script>
 
 
-<header bind:this={header} class="bg-black bg-opacity-0 rgba flex justify-between items-center py-4 px-10 fixed w-full top-0 left-z z-10">
+<header bind:this={header} class="bg-black bg-opacity-0 flex justify-between items-center py-3 px-4 lg:py-4 lg:px-10 fixed w-full top-0 left-z z-10">
     <h1 class="font-bold uppercase text-white text-3xl">Geiz</h1>
     <nav bind:this={nav} class="flex space-x-2 text-white">
         <a href="#home" class="btn btn-ghost">Home</a>
         <a href="#about" class="btn btn-ghost">Over Ons</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
+    </nav>
+    <nav class="phone-nav">
+        <button class="btn btn-square btn-ghost">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current">
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
     </nav>
 </header>
 
@@ -50,12 +66,13 @@
             <p class="mb-8">
                 Hoewel Geiz pas in 2023 is opgericht, brengen onze kappers waardevolle ervaring met zich mee die ze sinds 2017 hebben opgedaan in het vak. 
                 Sinds de start van hun carrière hebben zij hun vaardigheden verfijnd en zich continu bijgeschoold in de nieuwste technieken en trends in haarverzorging. 
-                Bij Geiz combineren we deze ervaring met de nieuwste trends om een uitstekende service te bieden. 
+                Bij Geiz combineren we deze ervaring met de nieuwste trends om een uitstekende service te bieden.
                 <br>
                 <br>
                 Bij Geiz staat kwaliteit voorop. Onze ervaren kappers gebruiken uitsluitend hoogwaardige producten en technieken 
                 om ervoor te zorgen dat je met een tevreden gevoel de deur uitgaat. 
                 Wij hebben een passie voor zowel klassieke als moderne kapsels en zorgen ervoor dat elk kapsel met precisie en vakmanschap wordt uitgevoerd.
+                Bekijk hier onze <a href="#about" class="link link-secondary">openingstijden</a>.
             </p>
         </div>
         <div class="flex-1">
@@ -76,7 +93,7 @@
                 behoeften te begrijpen en bieden professioneel advies om het beste resultaat te bereiken. 
                 Onze focus ligt op klanttevredenheid, en wij streven ernaar om jou een comfortabele en op maat gemaakte ervaring te 
             </p>
-            <a href="#contact" class="btn btn-outline btn-primary border-2">Afspraak maken</a>
+            <a href="#contact" class="btn btn-outline btn-primary">Afspraak maken</a>
         </div>
         <div class="flex-1">
             <img src="barbershop2.jpg" class="w-full lg:w-5/6 h-auto rounded-lg" alt="Barbershop interior">
@@ -103,18 +120,18 @@
                 </p>
             </div>    
             <ul class="timeline timeline-vertical flex-1">
-                <li>
-                <div class="timeline-start timeline-box"><span class="font-bold">2016:</span> Begonnen met knippen als hobby</div>
+                <li >
+                <div class="timeline-start timeline-box shadow-xl"><span class="font-bold">2016:</span> Begonnen met knippen als hobby</div>
                 <hr />
                 </li>
                 <li>
                 <hr />
-                <div class="timeline-end timeline-box"><span class="font-bold">2017:</span>  Eerste baan als kapper</div>
+                <div class="timeline-end timeline-box shadow-xl"><span class="font-bold">2017:</span>  Eerste baan als kapper</div>
                 <hr />
                 </li>
                 <li>
                 <hr />
-                <div class="timeline-start timeline-box"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
+                <div class="timeline-start timeline-box shadow-xl"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
                 </li>
             </ul>
         </div>

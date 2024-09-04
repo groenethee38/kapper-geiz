@@ -13,3 +13,7 @@ html {
 .btn-ghost:hover {
     background: #a3a3a320;
 }
+
+.phone-nav {
+    display: none;
+}

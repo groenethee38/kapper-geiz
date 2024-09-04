@@ -11,7 +11,7 @@ export default {
       colors: {
         primary: '#F5F5F5',
         secondary: '#e3e1e1',
-        accent: '#2e221b',
+        accent: '#192a51',
         footer: '#303030',
         'primary-content': '#000',
         'secondary-content': '#555555',
@@ -24,9 +24,9 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: '#008080',
-          secondary: '#FF6F61',
-          accent: '#FFA07A',
+          primary: '#573280',
+          secondary: '#A1A9F1',
+          accent: '#D5C6E0',
           neutral: '#333333',
           'base-100': '#fff',
           info: '#3ABFF8',
