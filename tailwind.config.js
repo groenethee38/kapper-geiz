@@ -14,7 +14,7 @@ export default {
         accent: '#192a51',
         footer: '#303030',
         'primary-content': '#000',
-        'secondary-content': '#555555',
+        'secondary-content': '#949494',
         'accent-content': '#FFFFFF',
       },
     },
