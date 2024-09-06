@@ -3,12 +3,22 @@
     
     let header;
     let nav;
-    let phoneNav = document.getElementById('phone-nav');
+    let sidebar;
+    let isOpen = false;
+
+    
+    function toggle() {
+        isOpen = !isOpen;
+    }
 
     onMount(() => {
-        if (window.innerWidth <= 400) {
-            nav.classList.add('hidden');
-        }
+        const handleResize = () => {
+            if (window.innerWidth > 400) {
+                nav.classList.remove('hidden');
+            } else {
+                nav.classList.add('hidden');
+            }
+        };
 
         const handleScroll = () => {
             if (window.scrollY > 20) {
@@ -21,8 +31,12 @@
         };
 
         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
 
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
+        }
     });
 </script>
 
@@ -34,20 +48,26 @@
         <a href="#about" class="btn btn-ghost">Over Ons</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
     </nav>
-    <nav class="phone-nav">
-        <button class="btn btn-square btn-ghost">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="inline-block h-5 w-5 stroke-current">
-                <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+
+    <button class="btn btn-square btn-ghost lg:hidden" on:click={toggle}>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-5 w-5 stroke-current">
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+    <nav bind:this={sidebar} class="phone-nav flex flex-col items-start fixed top-0 right-0 min-h-screen w-64 z-50 drop-shadow-2xl backdrop-blur-xl p-4 transform transition-transform duration-300"
+        class:translate-x-full={!isOpen}
+        class:translate-x-0={isOpen}>
+        <a href="#home" class="btn btn-ghost w-full justify-start">Home</a>
+        <a href="#about" class="btn btn-ghost w-full justify-start">Over Ons</a>
+        <a href="#contact" class="btn btn-ghost w-full justify-start">Contact</a>
     </nav>
 </header>
 
@@ -72,7 +92,7 @@
                 Bij Geiz staat kwaliteit voorop. Onze ervaren kappers gebruiken uitsluitend hoogwaardige producten en technieken 
                 om ervoor te zorgen dat je met een tevreden gevoel de deur uitgaat. 
                 Wij hebben een passie voor zowel klassieke als moderne kapsels en zorgen ervoor dat elk kapsel met precisie en vakmanschap wordt uitgevoerd.
-                Bekijk hier onze <a href="#about" class="link link-secondary">openingstijden</a>.
+                Bekijk hier onze <a href="#openingstijden" class="link link-secondary">openingstijden</a>.
             </p>
         </div>
         <div class="flex-1">
@@ -131,7 +151,7 @@
                 </li>
                 <li>
                 <hr />
-                <div class="timeline-start timeline-box shadow-xl"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
+                <div id="openingstijden" class="timeline-start timeline-box shadow-xl"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
                 </li>
             </ul>
         </div>
