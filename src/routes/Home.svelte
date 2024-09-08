@@ -4,6 +4,7 @@
     let header;
     let nav;
     let sidebar;
+    let headerH1;
     let isOpen = false;
 
     
@@ -13,10 +14,12 @@
 
     onMount(() => {
         const handleResize = () => {
-            if (window.innerWidth > 400) {
+            if (window.innerWidth > 1024) {
                 nav.classList.remove('hidden');
+                headerH1.classList.remove('hidden');
             } else {
                 nav.classList.add('hidden');
+                headerH1.classList.add('hidden');
             }
         };
 
@@ -33,6 +36,8 @@
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
 
+        handleResize();
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
@@ -41,15 +46,15 @@
 </script>
 
 
-<header bind:this={header} class="bg-black bg-opacity-0 flex justify-between items-center py-3 px-4 lg:py-4 lg:px-10 fixed w-full top-0 left-z z-10">
-    <h1 class="font-bold uppercase text-white text-3xl">Geiz</h1>
-    <nav bind:this={nav} class="flex space-x-2 text-white">
+<header bind:this={header} class="lg:bg-black bg-opacity-0 flex justify-between items-center py-3 px-4 lg:py-4 lg:px-10 fixed w-full top-0 left-z z-10">
+    <h1 bind:this={headerH1} class="hidden font-bold uppercase text-white text-3xl">Geiz</h1>
+    <nav bind:this={nav} class="hidden lg:flex space-x-2 text-white">
         <a href="#home" class="btn btn-ghost">Home</a>
         <a href="#about" class="btn btn-ghost">Over Ons</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
     </nav>
 
-    <button class="btn btn-square btn-ghost lg:hidden" on:click={toggle}>
+    <button class="bg-white btn btn-square btn-ghost ml-auto lg:hidden" on:click={toggle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -65,6 +70,11 @@
     <nav bind:this={sidebar} class="phone-nav flex flex-col items-start fixed top-0 right-0 min-h-screen w-64 z-50 drop-shadow-2xl backdrop-blur-xl p-4 transform transition-transform duration-300"
         class:translate-x-full={!isOpen}
         class:translate-x-0={isOpen}>
+        <button class="ml-auto btn btn-square btn-ghost lg:hidden flex justify-center items-center" on:click={toggle}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 50 50">
+                <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+            </svg>
+        </button>
         <a href="#home" class="btn btn-ghost w-full justify-start">Home</a>
         <a href="#about" class="btn btn-ghost w-full justify-start">Over Ons</a>
         <a href="#contact" class="btn btn-ghost w-full justify-start">Contact</a>
