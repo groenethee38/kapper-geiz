@@ -24,7 +24,7 @@
         };
 
         const handleScroll = () => {
-            if (window.scrollY > 20) {
+            if (window.scrollY > 20 && window.innerWidth > 1024) {
                 header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
             } else {
                 header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
@@ -36,6 +36,7 @@
         window.addEventListener('resize', handleResize);
 
         handleResize();
+        handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -200,19 +201,17 @@
     <div class="max-w-6xl mx-auto flex flex-col px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
         <h1 class=" text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
         <div class="flex flex-col lg:flex-row space-y-6">
-            <div class="flex-1 text-left pr-20">
-                <p>    
-                    Hoewel Geiz pas in 2023 officieel werd opgericht, brengen wij bij Geiz jarenlange ervaring en vakmanschap met ons mee. 
-                    Sinds 2016 zijn we actief als kapper en hebben we onze vaardigheden voortdurend verfijnd en uitgebreid. 
-                    Deze jarenlange ervaring in de branche stelt ons in staat om een uitzonderlijke kwaliteit van haarverzorging te bieden.
-                    <br>
-                    <br>
-                    Met de oprichting van Geiz in 2023 hebben wij onze passie en expertise in een eigen barbershop gebundeld. 
-                    Ondanks dat we een relatief nieuwe speler zijn op de markt, zetten wij onze uitgebreide ervaring en kennis in om uitstekende service te leveren. 
-                    Onze klantenkring groeit snel en we zijn trots op de positieve feedback die we tot nu toe hebben ontvangen. 
-                    Bij Geiz combineren we jarenlange ervaring met een frisse benadering om jouw kapsel precies goed te krijgen.
-                </p>
-            </div>    
+            <p class="flex-1 text-center lg:text-left lg:pr-20">    
+                Hoewel Geiz pas in 2023 officieel werd opgericht, brengen wij bij Geiz jarenlange ervaring en vakmanschap met ons mee. 
+                Sinds 2016 zijn we actief als kapper en hebben we onze vaardigheden voortdurend verfijnd en uitgebreid. 
+                Deze jarenlange ervaring in de branche stelt ons in staat om een uitzonderlijke kwaliteit van haarverzorging te bieden.
+                <br>
+                <br>
+                Met de oprichting van Geiz in 2023 hebben wij onze passie en expertise in een eigen barbershop gebundeld. 
+                Ondanks dat we een relatief nieuwe speler zijn op de markt, zetten wij onze uitgebreide ervaring en kennis in om uitstekende service te leveren. 
+                Onze klantenkring groeit snel en we zijn trots op de positieve feedback die we tot nu toe hebben ontvangen. 
+                Bij Geiz combineren we jarenlange ervaring met een frisse benadering om jouw kapsel precies goed te krijgen.
+            </p>
             <ul class="timeline timeline-vertical flex-1">
                 <li >
                 <div class="timeline-start timeline-box shadow-xl"><span class="font-bold">2016:</span> Begonnen met knippen als hobby</div>
@@ -225,7 +224,7 @@
                 </li>
                 <li>
                 <hr />
-                <div id="openingstijden" class="timeline-start timeline-box shadow-xl"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
+                <div id="openingstijden" class="timeline-start timeline-box shadow-xl"><span class="font-bold">2024:</span>  Barbershop Geiz geopend</div>
                 </li>
             </ul>
         </div>
