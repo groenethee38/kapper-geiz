@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 header {
-    transition: background-color 0.4s; 
+    transition: background-color 0.5s; 
 }
 
 html {

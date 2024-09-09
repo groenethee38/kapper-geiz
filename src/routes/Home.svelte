@@ -25,13 +25,12 @@
 
         const handleScroll = () => {
             if (window.scrollY > 20) {
-                header.classList.remove('bg-opacity-0');
-                header.classList.add('bg-opacity-100');
+                header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
             } else {
-                header.classList.remove('bg-opacity-100');
-                header.classList.add('bg-opacity-0');
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
             }
         };
+
 
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
@@ -46,12 +45,12 @@
 </script>
 
 
-<header bind:this={header} class="lg:bg-black bg-opacity-0 flex justify-between items-center py-3 px-4 lg:py-4 lg:px-10 fixed w-full top-0 left-z z-10">
+<header bind:this={header} class="bg-opacity-0 flex justify-between items-center py-3 px-4 lg:py-4 lg:px-10 fixed w-full top-0 left-z z-10">
     <h1 bind:this={headerH1} class="hidden font-bold uppercase text-white text-3xl">Geiz</h1>
     <nav bind:this={nav} class="hidden lg:flex space-x-2 text-white">
         <a href="#home" class="btn btn-ghost">Home</a>
+        <a href="#contact" class="btn btn-ghost">Afspraak maken</a>
         <a href="#about" class="btn btn-ghost">Over Ons</a>
-        <a href="#contact" class="btn btn-ghost">Contact</a>
     </nav>
 
     <button class="bg-white btn btn-square btn-ghost ml-auto lg:hidden" on:click={toggle}>
@@ -76,8 +75,8 @@
             </svg>
         </button>
         <a href="#home" class="btn btn-ghost w-full justify-start">Home</a>
+        <a href="#contact" class="btn btn-ghost w-full justify-start">Afspraak maken</a>
         <a href="#about" class="btn btn-ghost w-full justify-start">Over Ons</a>
-        <a href="#contact" class="btn btn-ghost w-full justify-start">Contact</a>
     </nav>
 </header>
 
@@ -102,8 +101,8 @@
                 Bij Geiz staat kwaliteit voorop. Onze ervaren kappers gebruiken uitsluitend hoogwaardige producten en technieken 
                 om ervoor te zorgen dat je met een tevreden gevoel de deur uitgaat. 
                 Wij hebben een passie voor zowel klassieke als moderne kapsels en zorgen ervoor dat elk kapsel met precisie en vakmanschap wordt uitgevoerd.
-                Bekijk hier onze <a href="#openingstijden" class="link link-secondary">openingstijden</a>.
             </p>
+            <a href="#contact" class="btn btn-outline btn-primary">Afspraak maken</a>
         </div>
         <div class="flex-1">
             <img src="barbershop1.jpg" class="w-full h-full rounded-lg" alt="Barbershop interior">
@@ -120,10 +119,9 @@
                 <br>
                 <br>
                 Bij Geiz hechten wij veel waarde aan een persoonlijke benadering. Wij nemen de tijd om jouw wensen en 
-                behoeften te begrijpen en bieden professioneel advies om het beste resultaat te bereiken. 
-                Onze focus ligt op klanttevredenheid, en wij streven ernaar om jou een comfortabele en op maat gemaakte ervaring te 
+                behoeften te begrijpen en bieden professioneel advies om het beste resultaat te bereiken.
+                Bekijk hier onze <a href="#openingstijden" class="link link-secondary">openingstijden</a>.
             </p>
-            <a href="#contact" class="btn btn-outline btn-primary">Afspraak maken</a>
         </div>
         <div class="flex-1">
             <img src="barbershop2.jpg" class="w-full lg:w-5/6 h-auto rounded-lg" alt="Barbershop interior">
@@ -132,105 +130,7 @@
 </section>
 
 
-<section id="about" class="py-32 bg-secundary ">
-    <div class="max-w-6xl mx-auto flex flex-col px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
-        <h1 class=" text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
-        <div class="flex flex-col lg:flex-row space-y-6">
-            <div class="flex-1 text-left pr-20">
-                <p>    
-                    Hoewel Geiz pas in 2023 officieel werd opgericht, brengen wij bij Geiz jarenlange ervaring en vakmanschap met ons mee. 
-                    Sinds 2016 zijn we actief als kapper en hebben we onze vaardigheden voortdurend verfijnd en uitgebreid. 
-                    Deze jarenlange ervaring in de branche stelt ons in staat om een uitzonderlijke kwaliteit van haarverzorging te bieden.
-                    <br>
-                    <br>
-                    Met de oprichting van Geiz in 2023 hebben wij onze passie en expertise in een eigen barbershop gebundeld. 
-                    Ondanks dat we een relatief nieuwe speler zijn op de markt, zetten wij onze uitgebreide ervaring en kennis in om uitstekende service te leveren. 
-                    Onze klantenkring groeit snel en we zijn trots op de positieve feedback die we tot nu toe hebben ontvangen. 
-                    Bij Geiz combineren we jarenlange ervaring met een frisse benadering om jouw kapsel precies goed te krijgen.
-                </p>
-            </div>    
-            <ul class="timeline timeline-vertical flex-1">
-                <li >
-                <div class="timeline-start timeline-box shadow-xl"><span class="font-bold">2016:</span> Begonnen met knippen als hobby</div>
-                <hr />
-                </li>
-                <li>
-                <hr />
-                <div class="timeline-end timeline-box shadow-xl"><span class="font-bold">2017:</span>  Eerste baan als kapper</div>
-                <hr />
-                </li>
-                <li>
-                <hr />
-                <div id="openingstijden" class="timeline-start timeline-box shadow-xl"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
-                </li>
-            </ul>
-        </div>
-        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row justify-start lg:space-x-4">
-            <div class="flex pt-6 lg:pt-0">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5569.762524335026!2d5.899942782876557!3d51.983616522609175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a5b9ff24740b%3A0xd755c8f57a1f7188!2sStation%20Arnhem%20Centraal!5e0!3m2!1snl!2snl!4v1725381631850!5m2!1snl!2snl"
-                    width="550" 
-                    height="450" 
-                    class="rounded-lg w-full lg:w-[550px]" 
-                    loading="lazy" 
-                    title="map">
-                </iframe>
-            </div>
-            <div class="my-auto px-6 pt-6 lg:pt-0">
-                <h3 class="text-2xl tracking-wider uppercase py-4 text-left font-semibold">Openingstijden</h3>
-                <tr>
-                    <th class="text-left py-2 font-normal">Dinsdag</th>
-                    <th class="pr-4">10:00</th>
-                    <th>18:00</th>
-                </tr>
-                <tr>
-                    <th class="text-left py-2 font-normal">Woensdag</th>
-                    <th class="pr-4">10:00</th>
-                    <th>18:00</th>
-                </tr>
-                <tr>
-                    <th class="text-left py-2 pr-6 font-normal">Donderdag</th>
-                    <th class="pr-4">10:00</th>
-                    <th>18:00</th>
-                </tr>
-                <tr>
-                    <th class="text-left py-2 font-normal">Vrijdag</th>
-                    <th class="pr-4">10:00</th>
-                    <th>20:00</th>
-                </tr>
-                <tr>
-                    <th class="text-left py-2 font-normal">Zaterdag</th>
-                    <th class="pr-4">10:00</th>
-                    <th>18:00</th>
-                </tr>
-                
-                <p class="py-10">
-                    Station Arnhem Centraal<br> Stationsplein 166, 6811 KJ Arnhem<br> 06 31834933<br> info@geiz.nl
-                </p>
-            </div>
-        </div>
- </section>
-
-<section id="" class="py-32 bg-accent text-accent-content">
-    <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle space-y-12 lg:space-y-24 lg:space-x-16">
-        <h1 class="text-5xl font-bold ">Onze tevreden klanten</h1>
-        <div class="flex flex-col lg:flex-row lg:space-x-12 indicator space-y-6 lg:space-y-0">
-            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
-                <span class="indicator-item badge badge-accent">high fade</span>
-                <img src="1.jpg" class="h-full w-full object-cover rounded-lg" alt="">
-            </div>
-            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
-                <span class="indicator-item badge badge-primary">mid fade</span>
-                <img src="2.webp" class="h-full w-full object-cover rounded-lg" alt="">
-            </div>
-            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
-                <img src="3.jpg" class="h-full w-full object-cover rounded-lg" alt="">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="py-32 bg-primary">
+<section id="contact" class="py-32 bg-secundary">
     <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-12 lg:space-y-24 lg:space-x-16">
         <div class="w-full">
             <h1 class="text-5xl font-bold">Maak een afspraak</h1>
@@ -276,6 +176,109 @@
         </div>
     </div>
 </section>
+
+<section id="" class="py-32 bg-accent text-accent-content">
+    <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle space-y-12 lg:space-y-24 lg:space-x-16">
+        <h1 class="text-5xl font-bold ">Onze tevreden klanten</h1>
+        <div class="flex flex-col lg:flex-row lg:space-x-12 indicator space-y-6 lg:space-y-0">
+            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
+                <span class="indicator-item badge badge-accent">high fade</span>
+                <img src="1.jpg" class="h-full w-full object-cover rounded-lg" alt="">
+            </div>
+            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
+                <span class="indicator-item badge badge-primary">mid fade</span>
+                <img src="2.webp" class="h-full w-full object-cover rounded-lg" alt="">
+            </div>
+            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
+                <img src="3.jpg" class="h-full w-full object-cover rounded-lg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-32 bg-primary ">
+    <div class="max-w-6xl mx-auto flex flex-col px-4 lg:px-0 space-y-12 lg:space-y-24 lg:space-x-16">
+        <h1 class=" text-5xl font-bold items-center justify-center text-center align-middle">Sinds 2016</h1>
+        <div class="flex flex-col lg:flex-row space-y-6">
+            <div class="flex-1 text-left pr-20">
+                <p>    
+                    Hoewel Geiz pas in 2023 officieel werd opgericht, brengen wij bij Geiz jarenlange ervaring en vakmanschap met ons mee. 
+                    Sinds 2016 zijn we actief als kapper en hebben we onze vaardigheden voortdurend verfijnd en uitgebreid. 
+                    Deze jarenlange ervaring in de branche stelt ons in staat om een uitzonderlijke kwaliteit van haarverzorging te bieden.
+                    <br>
+                    <br>
+                    Met de oprichting van Geiz in 2023 hebben wij onze passie en expertise in een eigen barbershop gebundeld. 
+                    Ondanks dat we een relatief nieuwe speler zijn op de markt, zetten wij onze uitgebreide ervaring en kennis in om uitstekende service te leveren. 
+                    Onze klantenkring groeit snel en we zijn trots op de positieve feedback die we tot nu toe hebben ontvangen. 
+                    Bij Geiz combineren we jarenlange ervaring met een frisse benadering om jouw kapsel precies goed te krijgen.
+                </p>
+            </div>    
+            <ul class="timeline timeline-vertical flex-1">
+                <li >
+                <div class="timeline-start timeline-box shadow-xl"><span class="font-bold">2016:</span> Begonnen met knippen als hobby</div>
+                <hr />
+                </li>
+                <li>
+                <hr />
+                <div class="timeline-end timeline-box shadow-xl"><span class="font-bold">2017:</span>  Eerste baan als kapper</div>
+                <hr />
+                </li>
+                <li>
+                <hr />
+                <div id="openingstijden" class="timeline-start timeline-box shadow-xl"><span class="font-bold">2023:</span>  Barbershop Geiz geopend</div>
+                </li>
+            </ul>
+        </div>
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row justify-start lg:space-x-4">
+            <div class="flex pt-6 lg:pt-0">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5569.762524335026!2d5.899942782876557!3d51.983616522609175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a5b9ff24740b%3A0xd755c8f57a1f7188!2sStation%20Arnhem%20Centraal!5e0!3m2!1snl!2snl!4v1725381631850!5m2!1snl!2snl"
+                    height="450" 
+                    class="rounded-lg w-full max-w-full lg:w-[550px]" 
+                    loading="lazy" 
+                    title="map">
+                </iframe>
+            </div>
+            <div class="my-auto px-6 pt-6 lg:pt-0 justify-center">
+                <div class="overflow-x-auto">                
+                    <h3 class="text-2xl tracking-wider uppercase py-4 text-left font-semibold">Openingstijden</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th class="text-left pl-0 font-normal">Dinsdag</th>
+                                <td class="pr-4">10:00</td>
+                                <td>18:00</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left pl-0 font-normal">Woensdag</th>
+                                <td class="pr-4">10:00</td>
+                                <td>18:00</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left pl-0 font-normal">Donderdag</th>
+                                <td class="pr-4">10:00</td>
+                                <td>18:00</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left pl-0 font-normal">Vrijdag</th>
+                                <td class="pr-4">10:00</td>
+                                <td>20:00</td>
+                            </tr>
+                            <tr>
+                                <th class="text-left pl-0 font-normal">Zaterdag</th>
+                                <td class="pr-4">10:00</td>
+                                <td>18:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="py-10">
+                    Station Arnhem Centraal<br> Stationsplein 166, 6811 KJ Arnhem<br> 06 31834933<br> info@geiz.nl
+                </p>
+            </div>
+        </div>
+ </section>
 
 <footer class="py-10 lg:py-16 text-gray-content bg-footer text-secondary-content">
     <div class="max-w-6xl flex flex-col lg:flex-row mx-auto px-2">
