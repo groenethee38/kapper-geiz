@@ -20,6 +20,7 @@
             } else {
                 nav.classList.add('hidden');
                 headerH1.classList.add('hidden');
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
             }
         };
 
