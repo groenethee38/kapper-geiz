@@ -85,8 +85,8 @@
 <section class="hero min-h-screen" style="background-image: url(hero-wallpaper-1.jpg)">
     <div id="home" style="position: absolute; top: 0;"></div>    
     <div class="hero-content text-center flex flex-col">
-        <h1 class="font-bold text-8xl text-white">Geiz</h1>
-        <h3 class=" font-medium italic text-5xl text-white">Jouw kapsel, onze kunst</h3>
+        <h1 class="font-bold text-8xl text-white uppercase">Geiz</h1>
+        <h3 class="font- font-medium italic text-5xl text-white" style="font-family: serif;">Jouw kapsel, onze kunst</h3>
     </div>
 </section>
 
@@ -183,16 +183,46 @@
     <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center align-middle space-y-12 lg:space-y-24 lg:space-x-16">
         <h1 class="text-5xl font-bold ">Onze tevreden klanten</h1>
         <div class="flex flex-col lg:flex-row lg:space-x-12 indicator space-y-6 lg:space-y-0">
-            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
+            <div class="group card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
                 <span class="indicator-item badge badge-accent">high fade</span>
                 <img src="1.jpg" class="h-full w-full object-cover rounded-lg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 rounded-lg bg-black opacity-80 overflow-hidden w-full h-0 transition-all group-hover:h-full">
+                    <div class="text-white absolute overflow-hidden p-4 lg:pt-16 text-sm lg:text-base">
+                        Recensie van <span class="font-bold">Mark</span>
+                        <br>
+                        ⭐⭐⭐⭐⭐
+                        <br>
+                        "De kappers hier weten precies wat ze doen en geven je altijd advies over welke stijl het beste bij je past. 
+                        Ze werken snel, maar nemen toch de tijd om ervoor te zorgen dat alles perfect is. Echt een topzaak!"
+                    </div>
+                </div>
             </div>
-            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
+            <div class="group card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
                 <span class="indicator-item badge badge-primary">mid fade</span>
-                <img src="2.webp" class="h-full w-full object-cover rounded-lg" alt="">
+                <img src="2.webp" class="img2 h-full w-full object-cover rounded-lg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 rounded-lg bg-black opacity-80 overflow-hidden w-full h-0 transition-all group-hover:h-full">
+                    <div class="text-white absolute overflow-hidden p-4 lg:pt-16 text-sm lg:text-base">
+                        Recensie van <span class="font-bold">Thomas</span>
+                        <br>
+                        ⭐⭐⭐⭐
+                        <br>
+                        "Voor het eerst bij Geiz geweest en ik ben blij met het resultaat. De kapper was vriendelijk en professioneel. 
+                        Het enige minpuntje was dat ik iets langer moest wachten dan verwacht, maar de kwaliteit van de knipbeurt maakte dat meer dan goed. Ik kom zeker terug."
+                    </div>
+                </div>
             </div>
-            <div class="card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
+            <div class="group card bg-base-100 h-64 lg:h-96 w-64 lg:w-96 shadow-xl flex-shrink-0">
                 <img src="3.jpg" class="h-full w-full object-cover rounded-lg" alt="">
+                <div class="absolute bottom-0 left-0 right-0 rounded-lg bg-black opacity-80 overflow-hidden w-full h-0 transition-all group-hover:h-full">
+                    <div class="text-white absolute overflow-hidden p-4 lg:pt-16 text-sm lg:text-base">
+                        Recensie van <span class="font-bold">David</span>
+                        <br>
+                        ⭐⭐⭐⭐⭐
+                        <br>
+                        "Geiz is zonder twijfel de beste kapperszaak in de buurt. Gijs, de eigenaar, zorgt altijd voor een relaxte sfeer en uitstekende service. 
+                        Of je nu voor een simpele knipbeurt komt of iets speciaals wilt, je wordt altijd goed geholpen. Ik kan deze kapper aan iedereen aanraden!"
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -241,7 +271,7 @@
             </div>
             <div class="my-auto px-6 pt-6 lg:pt-0 justify-center">
                 <div class="overflow-x-auto">                
-                    <h3 class="text-2xl tracking-wider uppercase py-4 text-left font-semibold">Openingstijden</h3>
+                    <h3 class="text-2xl py-4 text-left font-semibold">Openingstijden</h3>
                     <table class="table">
                         <tbody>
                             <tr>
